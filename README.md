@@ -6,13 +6,13 @@
 - Client-side: functions from lib `next-auth/react`, only auto update Client-side session.
 - 2 side session not sync.
 
-* E.g. after 'signIn' from auth.ts, it only auto update session server-side, client-side not update.
+> E.g. after 'signIn' from auth.ts, it only auto update session server-side, client-side not update.
 
 - Solve:
 
-* Reload page bruh ¬_¬
-* Using `update()` from `useSession` to update session after actions.
-* Or using correct function from server/client side. Like `signOut` from `next-auth/react` in client component.
+> Reload page bruh ¬_¬
+> Using `update()` from `useSession` to update session after actions.
+> Or using correct function from server/client side. Like `signOut` from `next-auth/react` in client component.
 
 - That why in this project, login with OAuth no problem but login with credentials cause error. Because, `OAuth` component is client and it use `signIn` from `next-auth/react`
 
