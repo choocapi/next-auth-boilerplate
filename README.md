@@ -29,19 +29,6 @@
 7. Case get/test session data from server-side and client-side
 8. Middleware to secure route
 
-## Deployment
-
-1. `npm run build`
-2. Import environment
-3. Update deploy domain in OAuth provider
-
-## Resend
-
-1. Need own domain
-2. Add it to resend
-3. Set config resend to domain
-4. Success -> update mail.ts to new domain
-
 ## Docker
 
 1. `docker compose up -d` to start compose
